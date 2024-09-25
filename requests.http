@@ -1,0 +1,25 @@
+GET http://127.0.0.1:4000/mascotas/buscar HTTP/1.1
+
+###
+POST http://127.0.0.1:4000/mascotas/crear HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Max",
+    "edad": 4
+}
+
+###
+PUT http://127.0.0.1:4000/mascotas/actualizar/2 HTTP/1.1
+
+###
+DELETE http://127.0.0.1:4000/mascotas/eliminar/2 HTTP/1.1
+
+// Solicitudes
+POST http://127.0.0.1:4000/solicitudes/crear  HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_mascota": 1,
+    "nombre_adoptante": "Juan Pérez"
+}
